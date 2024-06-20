@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share a Ride</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+  <a href="index.html" class="back-to-home">Back to Home</a> 
+
+  <div class="container"> 
+    <div> 
+      <img src="1.png" alt="Logo" class="logo"> 
+      </div>  
+
+    <h2>Share a Ride</h2>
+    <form action="/api/share-ride" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="route">Route:</label>
+      <input type="text" id="route" name="route" required>
+      <button type="submit">Submit</button>
+    </form> 
+    <button onclick="location.href='request.html'">Request a Ride</button> 
+    
+  </div>
+</body>
+</html>

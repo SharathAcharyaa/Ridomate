@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account</title>
+  <!-- Link to your CSS stylesheet and any other necessary resources -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <!-- Your existing content -->
+
+  <!-- Dropdown for Account -->
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="accountDropdown" aria-expanded="false">
+      Account
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+      <li><a class="dropdown-item" href="login.html">Login</a></li>
+      <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- JavaScript code -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const accountDropdown = document.getElementById("accountDropdown");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    accountDropdown.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!dropdownMenu.contains(event.target) && !accountDropdown.contains(event.target)) {
+        dropdownMenu.classList.remove("show");
+      }
+    });
+  });
+</script>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

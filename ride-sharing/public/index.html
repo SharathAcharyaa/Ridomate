@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Sharing Website</title>
+  <link rel="stylesheet" href="styles.css"> 
+  
+  
+</head>
+<body> 
+
+    <div class="logo-container">
+        <img src="1.png" alt="Logo" class="logo"> 
+     
+        
+  <header>
+    
+    <nav>
+      <ul> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="request.html">Request</a></li>
+        <li><a href="share.html">Share</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- <li><a href="account.html">Account</a></li>   --> 
+        <!-- <a href="notifications.html" id="notification-link">Notifications <span id="notification-count"></span></a>  -->
+        <li class="dropdown"> 
+            <a href="javascript:void(0)" class="dropbtn">Account</a>
+            <div class="dropdown-content">
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+            </div> <!-- Close the dropdown-content div -->
+        </li> <!-- Close the dropdown li -->
+        
+      </ul>
+    </nav>  
+      
+  </header> 
+
+  <div class="content">
+    <div class="text-container">
+        <h1 class="ride">"Ride with</h1>
+        <h1 class="care">care"</h1> 
+      <h6>"If you're commuting to college,</h6> 
+      <h6 class="description">Rido Mate is here to make your travel smooth and hassle-free"</h6> 
+    </div>
+    <div class="photo-container">
+        <img src="2.png" alt="photo" class="photo"> <!-- Corrected class name -->
+      </div>
+  </div> 
+  
+  <script>
+    async function fetchNotificationCount() {
+      const response = await fetch('/api/notifications');
+      const notifications = await response.json();
+      const pendingCount = notifications.filter(notification => notification.status === 'pending').length;
+      document.getElementById('notification-count').textContent = pendingCount ? `(${pendingCount})` : '';
+    }
+
+    document.addEventListener('DOMContentLoaded', fetchNotificationCount);
+  </script> 
+  
+</body>
+</html>

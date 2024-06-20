@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    width: 80%;
+    height: 50px;
+    background-color: #222;
+    padding: 0px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 1000;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+} 
+
+nav {
+    text-align: center; /* Center the navigation */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the links */
+    padding: 10px;
+    margin: 0 auto; 
+    margin-top: 0px; 
+    margin-left: 100px;
+    width: 70%; /* Set width to 100% */
+}
+
+nav ul li {
+    margin-left: 20px; /* Add spacing between links */
+    margin-right: 20px; /* Increase the gap */
+} 
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove left margin from the first link */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px; /* Adjust the font size */
+    padding: 10px 20px; /* Adjust the padding */
+}
+
+nav ul li a:hover {
+    background-color: #46b5ff;
+} 
+
+
+.logo-container {
+    margin-left: 10px; 
+    margin-top: 20px; 
+} 
+
+.logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: flex-start; /* Align to the left */
+    padding-left: 0px; /* Add some padding to the left */
+    text-align: left; /* Ensure text aligns left */
+} 
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+.ride {
+    font-size: 100px; /* Adjust the font size for "Ride" */ 
+    margin-right: 200px; 
+    margin-top: 0; /* Remove default margin */ 
+    /* margin-bottom: 100px; Adjust margin between h1 elements */
+}
+
+.care {
+    font-size: 100px; /* Adjust the font size for "care" */
+    margin-top: 0px; /* Add margin between "Ride" and "care" */ 
+    margin-left: 50px; 
+    margin-bottom: 0px; 
+} 
+
+
+
+
+
+.description { 
+    font-size: 10px; 
+    margin-top: 0px;
+    /* margin-left: 100px;  */ 
+    margin-bottom: 100px; /* Adjust margin between h1 and h6 elements */
+    
+} 
+
+
+
+.photo-container {
+    margin-left: auto; /* Push the photo container to the right */  
+    margin-top: auto; 
+    margin-bottom: 100px; 
+}
+
+.photo { 
+    width: 500px; /* Adjust the width as desired */
+    height: 500px; /* Make the height the same as the width for a square shape */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+.heading { 
+    margin-left: 10px;
+} 
+.container {
+    background-color: #fff;
+    padding: 10px; /* Reduce padding to make the container smaller */
+    margin: 20px; /* Add margin for spacing */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Set width to 90% of the viewport */
+    max-width: 500px;
+    max-height: 100%; /* Set max-height to 80% of the viewport height */
+    overflow-y: auto; /* Add vertical scroll if content exceeds container height */
+    box-sizing: border-box;
+}
+h1 {
+    color: rgb(255, 255, 255); /* White color for "RIDE WITH CARE" */ 
+    margin: 0 auto; /* Remove any default margin and center horizontally */
+    font-size: 100px; /* Adjust the font size as desired */ 
+} 
+
+h2 { 
+    color: #000000; /* White color for "RIDE WITH CARE" */
+    margin: 0 auto; /* Remove any default margin and center horizontally */
+    font-size: 100px; /* Adjust the font size as desired */ 
+} 
+
+h6 {
+    color: #fff; /* White color */
+    margin-top: 0px; /* Add some space between h1 and h6 */ 
+    margin-left: 50px;
+    font-size: 10px; /* Adjust the font size as desired */ 
+} 
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #000;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #47b2ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+} 
+input[type="email"] {
+    width: 100%; /* Set width to 100% for full-width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #3ea5ff;
+} 
+
+/* For webkit-based browsers */
+.container::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Make the thumb rounded */
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5); /* Color of the scrollbar track */
+    border-radius: 6px; /* Make the track rounded */
+}
+
+/* drop down menu */ 
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button */
+  .dropbtn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #4caf50;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #555;
+  } 
+
+  .back-to-home {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    text-decoration: none;
+  } 
+  input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    width: calc(100% - 22px); /* Adjusted width */
+}
+
+button[type="submit"],
+.signup-btn {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Make button full width */
+}
+
+button[type="submit"]:hover,
+.signup-btn:hover {
+    background-color: #52a3ff;
+} 
+
+  
